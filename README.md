@@ -13,3 +13,10 @@ PHP >= 7.2.9
 
 start by going to the `routes.php` file in your `src/Config` directory where you'll find 
 some examples on how you could use phplix.
+
+## Start server
+
+In your application directory, run the following command using the terminal:
+```
+php -S localhost:8080 -t public
+```
