@@ -13,6 +13,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return $this->render('welcome.html');
+        return $this->render('welcome.phtml');
     }
 }
