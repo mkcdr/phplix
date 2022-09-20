@@ -52,7 +52,7 @@ $app = new Kernel($settings);
 
 // Setting a custom 404 error handler
 /* $app->getErrorHandler()->setCustomHandler(404, function($ex) {
-	echo render_template('404.html', ['exception' => $ex]);
+	echo render_template('404.phtml', ['exception' => $ex]);
 }); */
 
 $app->run();
