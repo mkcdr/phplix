@@ -7,5 +7,5 @@ knowledge using PHP and other coding concepts to continue with phplix.
 
 ## Quick start
 
-start by going to the `route.php` file in your `src/Config` directory where you'll find 
+start by going to the `routes.php` file in your `src/Config` directory where you'll find 
 some examples on how you could use phplix.
