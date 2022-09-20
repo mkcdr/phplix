@@ -6,7 +6,7 @@ class AuthMiddleware
 {
     public function __invoke()
     {
-        // Demo authentication gose here
+        // Demo authentication
         if (!isset($_SESSION['usr'])) {
             redirect(url('user.login'));
         }
