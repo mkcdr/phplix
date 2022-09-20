@@ -29,7 +29,7 @@ return function (Router $r) {
      */
     $r->get('/', [HomeController::class, 'index'], ['name' => 'home']);
 
-    $r->get('/welcome', function() { return render_template('welcome.html'); });
+    $r->get('/welcome', function() { return render_template('welcome.phtml'); });
 
     /**
      * Example:
