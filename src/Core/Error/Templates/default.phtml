@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robot" content="none, noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= htmlentities($title) ?></title>
+    <style>
+        :root {
+            --bg-main: #f6f6f6;
+            --text-color: #555;
+            --text-muted-color: #888;
+            --anchor-color: #399dca;
+            --anchor-color-hover: #257ea6;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-main: #000000;
+                --text-color: #5e5e5e;
+                --text-muted-color: #838282;
+                --anchor-color: #ff9800;
+                --anchor-color-hover: #ffc107;
+            }
+        }
+
+        html, body { margin: 0; height: 100%;}
+        body {color: var(--text-color); background-color: var(--bg-main); font-family: system-ui, sans-serif;}
+        a { text-decoration: none; color: var(--anchor-color);}
+        a:hover {color: var(--anchor-color-hover);}
+        div.app-wrapper { display: flex; justify-content: center; align-items: center; text-align: center; height: 100%;}
+        div.app-content { padding: 1rem;}
+        .title { font-weight: normal; font-size: 1.6em;}
+        .description { color: var(--text-muted-color);}
+    </style>
+</head>
+<body>
+    
+    <div class="app-wrapper">
+        <div class="app-content">
+            <h1 class="title"><span class="code"><?= htmlentities($code) ?></span> | <?= htmlentities($message) ?></h1>
+            <p class="description"><?= htmlentities($description) ?></p>
+            <a href="/">Go to Homepage</a>
+        </div>
+    </div>
+
+</body>
+</html>
